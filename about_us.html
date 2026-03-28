@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjunath & associates com.</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Verdana, sans-serif;
+
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 750px;
+            color: white;
+        }
+
+        .section {
+            position: absolute;
+            left: 750px;
+            top: 80%;
+            transform: translateY(-50%); 
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .btn {
+            font-size: 20px;
+            padding: 10px 15px; /* makes button bigger */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 1050px;
+            transform: translateX(-50%);
+            background: transparent;
+            color: white;
+            padding: 20px;
+            font-family: Times New Roman;
+            font-size: large;
+            border-radius: 10px;
+            width: 40%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>About Us</h1>
+    <div class="content">
+    <p>Manjunath & Associates is a company focused on tax consultation and owned by Manjunath V. </p>
+    </div>
+    <div class="section">
+         <a href="index.html"  class="btn">Home</button>
+        <a href="projects.html" class="btn">Projects</button>
+        <a href="contact.html"  class="btn">Contact</button>
+        <!-- <script>
+        function showSection(sectionId) {
+            // hide all sections
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(sec => sec.style.display = 'none');
+
+            // show selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        </script> -->
+    </div>
+</body>
+</html>
