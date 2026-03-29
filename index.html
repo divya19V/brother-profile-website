@@ -20,48 +20,89 @@
             border-radius: 50%;
         }
 
+        @media screen {
+            @media (max-width: 600px) {
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                .section {
+                    flex-direction: column;   /* stack buttons */
+                    width: 100%;
+                }   
+
+                .btn {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        /* Main container */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* vertical center */
+            align-items: center;       /* horizontal center */
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
         h1 {
             color: white;
-            position: absolute;
+            /* position: absolute;
             top: 40%;
-            right: 200px;
-            color: white;
+            right: 200px; */
+            margin: 0;
+            font-size: 30px;
         }
 
         .section {
-            position: absolute;
+            /* position: absolute;
             right: 350px;
             top: 55%;
-            transform: translateY(-50%); 
+            transform: translateY(-50%);  */
             display: flex;
-            flex-direction: row;
-            gap: 10px;
+            /* flex-direction: row; */
+            gap: 15px;
+            margin-top: 20px;
         }
 
         .btn {
-            font-size: 20px;
+            /* font-size: 20px; */
             padding: 10px 15px; /* makes button bigger */
+            font-size: 18px;
+            background-color: #2575fc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
         }
         
     </style>
 </head>
 
 <body>
-    <h1>Manjunath & associates com.</h1>
-    <div class="section">
-        <a href="about_us.html" class="btn">About Us</button>
-        <a href="projects.html" class="btn">Projects</button>
-        <a href="contact.html"  class="btn">Contact</button>
-        <!-- <script>
-        function showSection(sectionId) {
-            // hide all sections
-            const sections = document.querySelectorAll('.content');
-            sections.forEach(sec => sec.style.display = 'none');
+    <div class="hero">
+        <h1>Manjunath & associates com.</h1>
+        <div class="section">
+            <a href="about_us.html" class="btn">About Us</a>
+            <a href="projects.html" class="btn">Projects</a>
+            <a href="contact.html"  class="btn">Contact</a>
+            <!-- <script>
+            function showSection(sectionId) {
+                // hide all sections
+                const sections = document.querySelectorAll('.content');
+                sections.forEach(sec => sec.style.display = 'none');
 
-            // show selected section
-            document.getElementById(sectionId).style.display = 'block';
-        }
-        </script> -->
+                // show selected section
+                document.getElementById(sectionId).style.display = 'block';
+            }
+            </script> -->
+        </div>
     </div>
 </body>
 </html>
