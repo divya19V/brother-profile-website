@@ -20,55 +20,81 @@
             border-radius: 50%;
         }
 
+        @media screen {
+            @media (max-width: 600px) {
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                .section {
+                    flex-direction: column;   /* stack buttons */
+                    width: 100%;
+                }   
+
+                .btn {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+        /* Main container */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   /* vertical center */
+            align-items: center;       /* horizontal center */
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
         h1 {
             color: white;
-            position: absolute;
+            /* position: absolute;
             top: 40%;
-            left: 750px;
-            color: white;
+            right: 200px; */
+            margin: 0;
+            font-size: 25px;
         }
 
         .section {
-            position: absolute;
-            left: 750px;
-            top: 80%;
-            transform: translateY(-50%); 
+            /* position: absolute;
+            right: 350px;
+            top: 55%;
+            transform: translateY(-50%);  */
             display: flex;
-            flex-direction: row;
-            gap: 10px;
+            /* flex-direction: row; */
+            gap: 15px;
+            margin-top: 20px;
         }
 
         .btn {
-            font-size: 20px;
+            /* font-size: 20px; */
             padding: 10px 15px; /* makes button bigger */
+            font-size: 18px;
+            background-color: #2575fc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 1050px;
-            transform: translateX(-50%);
-            background: transparent;
-            color: white;
-            padding: 20px;
-            font-family: Times New Roman;
-            font-size: large;
-            border-radius: 10px;
-            width: 40%;
-        }
-        
     </style>
 </head>
 
 <body>
-    <h1>Projects</h1>
-    <div class="content">
-    <p>Projects p1, p2, ....</p>
-    </div>
-    <div class="section">
-         <a href="index.html"  class="btn">Home</button>
-        <a href="about_us.html" class="btn">About Us</button>
-        <a href="contact.html"  class="btn">Contact</button>
+    <div class="hero">
+        <h1>Projects</h1>
+        <p style="font-size: 18px;" >Projects p1, p2, ....</p>
+
+        <div class="section">
+            <a href="index.html"  class="btn">Home</a>
+            <a href="about_us.html" class="btn">About Us</a>
+            <a href="contact.html"  class="btn">Contact</a>
         <!-- <script>
         function showSection(sectionId) {
             // hide all sections
@@ -79,6 +105,7 @@
             document.getElementById(sectionId).style.display = 'block';
         }
         </script> -->
+        </div>
     </div>
 </body>
 </html>
